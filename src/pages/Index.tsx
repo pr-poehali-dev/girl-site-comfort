@@ -49,7 +49,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(229,221,255,0.3),transparent_50%)]" />
         
         <div className="relative z-10 max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-light mb-8 text-foreground tracking-tight">
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-light mb-8 text-foreground tracking-tight text-glow floating">
             Лучшим девочкам
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 font-light tracking-wide">
@@ -84,11 +84,11 @@ const Index = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-0">
-                <div className="relative overflow-hidden aspect-[3/4]">
+                <div className="relative overflow-hidden aspect-[3/4] shimmer">
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
@@ -113,9 +113,9 @@ const Index = () => {
             alt="С любовью к тебе"
             className="w-full h-[600px] object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end justify-center pb-16">
-            <div className="text-center">
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-light text-white tracking-wide mb-4">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end justify-center pb-16 shimmer">
+            <div className="text-center floating">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-light text-white tracking-wide mb-4 text-glow">
                 С любовью к тебе
               </h2>
               <p className="text-xl md:text-2xl text-white/90 font-light">
