@@ -31,8 +31,8 @@ const Index = () => {
     {
       id: 5,
       image: "https://cdn.poehali.dev/files/ba377a79-4408-4534-8603-8c75b1425f6c.jpg",
-      title: "Сияние",
-      description: "Естественная красота"
+      title: "Бескорыстная",
+      description: "Янтарный свет"
     },
     {
       id: 6,
