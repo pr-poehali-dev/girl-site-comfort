@@ -50,7 +50,7 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-7xl md:text-8xl lg:text-9xl font-light mb-8 text-foreground tracking-tight">
-            Élegance
+            Лучшим девочкам
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 font-light tracking-wide">
             Пространство утончённого стиля и изящества
