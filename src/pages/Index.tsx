@@ -33,6 +33,12 @@ const Index = () => {
       image: "https://cdn.poehali.dev/files/ba377a79-4408-4534-8603-8c75b1425f6c.jpg",
       title: "Сияние",
       description: "Естественная красота"
+    },
+    {
+      id: 6,
+      image: "https://cdn.poehali.dev/files/b1f7f7b8-a3f4-496c-98ad-90c323e4f5ae.jpg",
+      title: "Лучшим девочкам",
+      description: "С любовью и восхищением"
     }
   ];
 
@@ -97,6 +103,21 @@ const Index = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section className="px-6 py-24 max-w-4xl mx-auto">
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-fade-in">
+          <img 
+            src="https://cdn.poehali.dev/files/b1f7f7b8-a3f4-496c-98ad-90c323e4f5ae.jpg"
+            alt="Лучшим девочкам"
+            className="w-full h-[600px] object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end justify-center pb-16">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-light text-white tracking-wide">
+              Лучшим девочкам
+            </h2>
+          </div>
         </div>
       </section>
 
