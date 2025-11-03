@@ -6,21 +6,33 @@ const Index = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "https://cdn.poehali.dev/projects/b1fd5b1c-a940-457b-9917-3d4f804955af/files/afd2e171-6fc0-4dc8-9b2e-d5890e2d389c.jpg",
+      image: "https://cdn.poehali.dev/files/787d923f-ca85-43ea-b775-b848a1d6f935.jpg",
       title: "Нежность",
-      description: "Изысканная красота в каждом лепестке"
+      description: "Изящный стиль в каждом образе"
     },
     {
       id: 2,
-      image: "https://cdn.poehali.dev/projects/b1fd5b1c-a940-457b-9917-3d4f804955af/files/dd85cf2c-09a0-4ee1-bd70-63b588796174.jpg",
-      title: "Элегантность",
-      description: "Утончённый стиль для особенных моментов"
+      image: "https://cdn.poehali.dev/files/5a6e98e0-4cc2-4c51-8e6e-4cc8f144451f.jpg",
+      title: "Естественность",
+      description: "Красота в гармонии с природой"
     },
     {
       id: 3,
-      image: "https://cdn.poehali.dev/projects/b1fd5b1c-a940-457b-9917-3d4f804955af/files/8ba482b0-ff4e-4632-9fad-a19355fad704.jpg",
-      title: "Красота",
-      description: "Роскошь в каждой детали"
+      image: "https://cdn.poehali.dev/files/cb8ec2e4-1cf1-47ec-b5b4-26eead09136f.jpg",
+      title: "Утончённость",
+      description: "Элегантность в каждой детали"
+    },
+    {
+      id: 4,
+      image: "https://cdn.poehali.dev/files/4cda3ea7-7fc3-4a36-b314-cdfed284f849.jpg",
+      title: "Игривость",
+      description: "Лёгкость и очарование"
+    },
+    {
+      id: 5,
+      image: "https://cdn.poehali.dev/files/ba377a79-4408-4534-8603-8c75b1425f6c.jpg",
+      title: "Сияние",
+      description: "Естественная красота"
     }
   ];
 
@@ -40,9 +52,10 @@ const Index = () => {
           <Button 
             size="lg" 
             className="rounded-full px-8 py-6 text-lg font-light tracking-wider hover:scale-105 transition-transform"
+            onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Открыть галерею
-            <Icon name="ArrowRight" size={20} className="ml-2" />
+            <Icon name="ArrowDown" size={20} className="ml-2" />
           </Button>
         </div>
       </section>
@@ -65,7 +78,7 @@ const Index = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-0">
-                <div className="relative overflow-hidden aspect-[4/5]">
+                <div className="relative overflow-hidden aspect-[3/4]">
                   <img 
                     src={item.image} 
                     alt={item.title}
