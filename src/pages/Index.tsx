@@ -31,14 +31,14 @@ const Index = () => {
     {
       id: 5,
       image: "https://cdn.poehali.dev/files/ba377a79-4408-4534-8603-8c75b1425f6c.jpg",
-      title: "Бескорыстная",
-      description: "Янтарный свет"
+      title: "Ты — моё солнце",
+      description: "Янтарный свет в моём сердце"
     },
     {
       id: 6,
       image: "https://cdn.poehali.dev/files/b1f7f7b8-a3f4-496c-98ad-90c323e4f5ae.jpg",
-      title: "Лучшим девочкам",
-      description: "С любовью и восхищением"
+      title: "С любовью к тебе",
+      description: "Ты делаешь мир прекраснее"
     }
   ];
 
@@ -110,16 +110,16 @@ const Index = () => {
         <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-fade-in">
           <img 
             src="https://cdn.poehali.dev/files/b1f7f7b8-a3f4-496c-98ad-90c323e4f5ae.jpg"
-            alt="Искренность"
+            alt="С любовью к тебе"
             className="w-full h-[600px] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end justify-center pb-16">
             <div className="text-center">
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-light text-white tracking-wide mb-4">
-                Искренность
+                С любовью к тебе
               </h2>
               <p className="text-xl md:text-2xl text-white/90 font-light">
-                С любовью и восхищением
+                Ты делаешь мир прекраснее
               </p>
             </div>
           </div>
