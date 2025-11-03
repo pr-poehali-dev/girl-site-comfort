@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import Hearts from "@/components/Hearts";
+import Particles from "@/components/Particles";
 
 const Index = () => {
   const galleryItems = [
@@ -44,6 +46,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-secondary/20 to-background">
+      <Hearts />
+      <Particles />
       <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,222,226,0.3),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(229,221,255,0.3),transparent_50%)]" />
